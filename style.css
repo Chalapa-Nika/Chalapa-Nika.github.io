@@ -28,6 +28,9 @@ header,
     background-size: cover;
     text-align: center;
 }
+header {
+background: url(img/header/header_bg.png);
+}
 /*.top_panel {
     background-color: #1e1300;
     height: 60px;
