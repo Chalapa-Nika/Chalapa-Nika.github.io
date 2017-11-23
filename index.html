@@ -9,21 +9,33 @@
     <link rel="shortcut icon" href="img/header/icon.png" type="image/png"/>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <link href="media.css" rel="stylesheet" />
     <link href="fontello.css" rel="stylesheet" />
     <link href="fontello-embedded.css" rel="stylesheet" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    
-</head>
+    <script type="text/javascript">
+        function show() {
+            obj = document.getElementById("frame");
+            obj.style.display = "block";
+        }  
+        function del() {
+            obj = document.getElementById("frame");
+            
+            obj.style.display = "none";
+        }
+    </script>
+    
+</head >
 <body>
-
     <!--HEADER-->
-
     <header class="main parallax-window" data-parallax="scroll" data-image-src="img/header/header_bg.png">
-        <div class=" container-fluid">
-            <div class="row"> 
+        <!--<div class=" container-fluid">
+            <div class="row">
                 <div class="top_panel">
                     <div class="col-md-4 col-md-offset-8 col-xs-5 col-xs-offset-7">
-                        <a href="#">ВХОД</a> | 
+                        <a href="#">ВХОД</a> |
                         <a href="#">РЕГИСТРАЦИЯ</a>
                         <a href="#" class="lang"><img src="img/header/EN.png" /></a>
                         <a href="#" class="lang"><img src="img/header/RUS.png" /></a>
@@ -31,10 +43,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div>-->
         <nav>
             <div class="container">
+                <div class="row">
                 <div class=" navbar-header">
                     <button class="navbar-toggle collapsed menu_btn" data-toggle="collapse" data-target="#top_menu">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -43,23 +55,22 @@
                         <img src="img/header/logo.png" alt="logo" class="logo" />
                     </a>
                 </div>
-
                 <div class="collapse navbar-collapse navbar-right" id="top_menu">
                     <ul class="menu">
                         <li><a href="index.html" class="home">ГЛАВНАЯ</a></li>
                         <li><a href="#">О НАС</a>
-                            <div class="hr"></div>                            
-                            <ul><li >
-                                    <div class="hr_1"></div>
-                                    <a href="#">АКТИВ КАФЕДРЫ</a></li>
-                                <li><a href="#">ВЫПУСКНИКИ</a></li></ul></li>
+                            <div class="hr"></div>
+                            <ul><li><div class="hr_1"></div>
+                                <a href="#">АКТИВ КАФЕДРЫ</a>
+                                </li>
+                                <li><a href="#">ВЫПУСКНИКИ</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">ФОРУМ</a></li>
-                        <li class="show">
-                            <a href="#">ДОСТИЖЕНИЯ</a>
+                        <li class="show"><a href="#">ДОСТИЖЕНИЯ</a>
                             <div class="hr"></div>
                             <ul class="some">
-                                <li>
-                                    <div class="hr_2"></div>
+                                <li><div class="hr_2"></div>
                                     <a href="#">НАУКА</a>
                                 </li>
                                 <li><a href="#">СПОРТ</a></li>
@@ -69,19 +80,16 @@
                         <li><a href="#">КОНТАКТЫ</a></li>
                     </ul>
                 </div>
-            </div>           
+            </div>
+            </div>
         </nav>
-
-        <div class="header_main">            
-             <img src="img/header/header_main.png" />  
+        <div class="header_main">
+            <img src="img/header/header_main.png" />
             <h1>Электроники и мехатроники</h1>
-            <a href="#dignity" class="down" id="down"><i class="icon-down-open"></i></a>
-        </div>    
+        </div>
     </header>
-
     <!--ДОСТОИНСТВА-->
-
-    <section class="dignity parallax-window" data-parallax="scroll" data-image-src="img/dignity/hu.jpg" id="dignity">        
+    <section class="dignity parallax-window" data-parallax="scroll" data-image-src="img/dignity/hu.jpg" id="dignity">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
@@ -99,7 +107,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 col-xs-6">
                     <div class="content">
                         <i class="icon-handshake-o"></i>
@@ -109,7 +116,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-4 col-xs-6">
                     <div class="content">
                         <i class="icon-lamp"></i>
@@ -119,7 +125,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 col-xs-6">
                     <div class="content">
                         <i class="icon-pen"></i>
@@ -129,7 +134,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 col-xs-6">
                     <div class="content">
                         <i class="icon-trophy"></i>
@@ -139,24 +143,20 @@
                         </div>
                     </div>
                 </div>
-
-                    <div class="col-md-4 col-xs-6">
-                        <div class="content">
-                            <i class="icon-users"></i>
-                            <div class="dignity_content">
-                                <h4>ДРУЖНЫЙ КОЛЛЕКТИВ</h4>
-                                <p>Сплоченность людей — нерушимая крепость.</p>
-                            </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="content">
+                        <i class="icon-users"></i>
+                        <div class="dignity_content">
+                            <h4>ДРУЖНЫЙ КОЛЛЕКТИВ</h4>
+                            <p>Сплоченность людей — нерушимая крепость.</p>
                         </div>
-                    </div>               
-                </div>            
-            </div>          
-            <a href="#activ" class="btn" id=""><i class="icon-down-open"></i></a>  
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
     <!--АКТИВ КАФЕДРЫ-->
-
-    <section class="activ" id="activ">
+    <section class="activ parallax-window" data-parallax="scroll" data-image-src="img/activ/bg.png">
         <div class="container">
             <h1>АКТИВ КАФЕДРЫ</h1>
             <div id="my-carousel" class="carousel slide" data-ride="carousel">
@@ -165,9 +165,7 @@
                     <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#my-carousel" data-slide-to="1"></li>
                     <li data-target="#my-carousel" data-slide-to="2"></li>
-                    <li data-target="#my-carousel" data-slide-to="3"></li>
-                    <li data-target="#my-carousel" data-slide-to="4"></li>
-                    <li data-target="#my-carousel" data-slide-to="5"></li>
+                    <li data-target="#my-carousel" data-slide-to="3"></li>                    
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
@@ -199,21 +197,8 @@
                             <p>Зам. старосты 339 группы</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <img alt="Fifth slide" src="img/activ/guzov.jpg">
-                        <div class="carousel-caption">
-                            <h3>ГУЗОВ ДМИТРИЙ</h3>
-                            <p>Староста 329 группы</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img alt="Sixth slide" src="img/activ/tsvetkovskiy.jpg">
-                        <div class="carousel-caption">
-                            <h3>ЦВЕТКОВСКИЙ ИВАН</h3>
-                            <p>Староста 339 группы</p>
-                        </div>
-                    </div>
                 </div>
+                <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
                 <!-- Controls -->
                 <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -226,13 +211,12 @@
             </div>
         </div>
     </section>
-
     <!--ГЕОГРАФИЯ СТУДЕНТОВ-->
     <section class="map">
         <h1>ГЕОГРАФИЯ СТУДЕНТОВ</h1>
         <div class="geography">
-            <a href="https://vk.com/id48516094" target="_blank"><img src="img/map/krivomlin.png" class="student" title="Кривомлин Анна"/></a>
-            <a href="https://vk.com/oleno4ka_1997" target="_blank"><img src="img/map/virko.png"  class="student" title="Вирко Елена" /></a>
+            <a href="https://vk.com/id48516094" target="_blank"><img src="img/map/krivomlin.png" class="student" title="Кривомлин Анна" /></a>
+            <a href="https://vk.com/oleno4ka_1997" target="_blank"><img src="img/map/virko.png" class="student" title="Вирко Елена" /></a>
             <a href="https://vk.com/the__boogeyman" target="_blank"><img src="img/map/nikitin.png" class="student" title="Никитин Егор" /></a>
             <a href="https://vk.com/o_kuksin" target="_blank"><img src="img/map/kyksin.png" class="student" title="Куксин Олег" /></a>
             <a href="https://vk.com/kirya_dobryi" target="_blank"><img src="img/map/dobrosol.png" class="student" title="Добросол Кирилл" /></a>
@@ -247,7 +231,7 @@
             <a href="https://vk.com/s.vik_tory" target="_blank"><img src="img/map/silchenko.png" class="student num_14" title="Сильченко Виктория" /></a>
             <a href="https://vk.com/black_ravenz" target="_blank"><img src="img/map/sirman.png" class="student num_15" title="Сирман Евгений" /></a>
             <a href="https://vk.com/ekstrimal123" target="_blank"><img src="img/map/todorov.png" class="student num_16" title="Тодоров Евгений" /></a>
-            <a href="https://vk.com/motorinoleg" target="_blank"><img src="img/map/motorin.png" class="student num_17" title="Моторин Олег"/></a>
+            <a href="https://vk.com/motorinoleg" target="_blank"><img src="img/map/motorin.png" class="student num_17" title="Моторин Олег" /></a>
             <a href="https://vk.com/classsic_style" target="_blank"><img src="img/map/pechatkin.png" class="student num_18" title="Печаткин Станислав" /></a>
             <a href="https://vk.com/id267371671" target="_blank"><img src="img/map/baranova.png" class="student num_19" title="Баранова Анастасия" /></a>
             <a href="https://vk.com/oleja225" target="_blank"><img src="img/map/hohlov.png" class="student num_20" title="Хохлов Олег" /></a>
@@ -259,23 +243,39 @@
             <a href="https://vk.com/id37347723" target="_blank"><img src="img/map/sidorova.png" class="student num_26" title="Сидорова Алена"></a>
        </div>
     </section>
-
     <!--ВИДЕО-->
-    <section class="video">
-        <h1>НАШЕ ТВОРЧЕСТВО</h1>
+    <section class="main parallax-window video" data-parallax="scroll" data-image-src="img/video/bg.jpg">
+        <h1>НАШЕ ТВОРЧЕСТВО</h1>        
+        <div id="frame">
+            <div style="width:50px;height: 50px;" onclick="del();" class="close"></div>
+            <iframe src="frame.html" name="video" width="1050" height="540" scrolling="no"></iframe>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 p0">
-                    <div class="video_block" id="videoPlaceholder">
+                    <div class="video_block">
                         <div class="image-wrap">
                             <div class="video_desc">
-                                <h4>PRODJECT NAME</h4>
-                                <i class="icon-play"></i>
+                                <h4>40 ЛЕТ СУЛА<br />КАФЕДРА 305</h4>
+                                <a href="frame.html" onclick="show();" target="video">
+                                    <i class="icon-play"></i>
+                                </a>
                             </div>
                         </div>
-                        <video width="200" height="200">
-                            <source src="img/kaf.mp4"/>
-                        </video>
+                        <img src="img/video/works/work-1.jpg" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-md-3 p0">
+                    <div class="video_block">
+                        <div class="image-wrap">
+                            <div class="video_desc">
+                                <h4>СЦЕНА НА ПРОКАТ</h4>
+                                <a href="frame1.html" onclick="show();" target="video">
+                                    <i class="icon-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="img/video/works/work-2.jpg" class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 p0">
@@ -285,7 +285,7 @@
                                 <h4>PRODJECT NAME</h4>
                             </div>
                         </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
+                        <img src="img/video/works/work-3.jpg" class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 p0">
@@ -295,7 +295,7 @@
                                 <h4>PRODJECT NAME</h4>
                             </div>
                         </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
+                        <img src="img/video/works/work-4.jpg" class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 p0">
@@ -305,7 +305,7 @@
                                 <h4>PRODJECT NAME</h4>
                             </div>
                         </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
+                        <img src="img/video/works/work-5.jpg" class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 p0">
@@ -315,7 +315,7 @@
                                 <h4>PRODJECT NAME</h4>
                             </div>
                         </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
+                        <img src="img/video/works/work-6.jpg" class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 p0">
@@ -325,7 +325,7 @@
                                 <h4>PRODJECT NAME</h4>
                             </div>
                         </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
+                        <img src="img/video/works/work-7.jpg" class="img-responsive" />
                     </div>
                 </div>
                 <div class="col-md-3 p0">
@@ -335,79 +335,104 @@
                                 <h4>PRODJECT NAME</h4>
                             </div>
                         </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
-                    </div>
-                </div>
-                <div class="col-md-3 p0">
-                    <div class="video_block">
-                        <div class="image-wrap">
-                            <div class="video_desc">
-                                <h4>PRODJECT NAME</h4>
-                            </div>
-                        </div>
-                        <img src="img/video/w1.png" class="img-responsive" />
+                        <img src="img/video/works/work-8.jpg" class="img-responsive" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <!--ФОРМА-->
     <section class="forma">
-        <div class="form">
-            <h3></h3>
-            
-            <form action="index2.php" class="form-group-lg" method="post">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Имя" class="form-control" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>ХОЧЕШЬ ПРИСОЕДИНИТЬСЯ К НАМ?</h2>
+                    <p>Заполни анкету и тебе перезвонят</p>
+                    <form action="index.php" class="form-group-lg" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Имя" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="surname" placeholder="Фамилия" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telephone" placeholder="Телефон" class="form-control" required pattern="[0-9]{10}" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="Message" placeholder="Оставте свой комментарий..." rows="8"></textarea>
+                        </div>
+                        <input type="submit" value="Отправить" class="btn btn-lg" />
+                    </form>
                 </div>
-                <div class="form-group">
-                    <input type="text" name="surname" placeholder="Фамилия" class="form-control"/>
+                <div class="col-md-3">
+                    <img src="img/form/Эмблема_ХАИ.png" class="img-responsive "/>
                 </div>
-                <div class="form-group">
-                    <input type="tel"  name="telephone" placeholder="Телефон" class="form-control"/>
+                <div class="col-md-3">
+                    <img src="img/form/prof.png" class="img-responsive " />
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control" name="Message" placeholder="Оставте свой комментарий..." rows="8"></textarea>
-                </div>                
-                <input type="submit" value="Отправить" class="btn btn-lg" />
-            </form>
-           
-           
+                <div class="col-md-3">
+                    <img src="img/form/ОВЕН.jpg" class="img-responsive" />
+                </div>
+                <div class="col-md-3">
+                    <img src="img/form/Logotip_russ.jpg" class="img-responsive" />
+                </div>
+                <div class="col-md-3">
+                    <img src="img/form/"
+                </div>
+            </div>
         </div>
     </section>
-
     <!--ПОДВАЛ-->
     <footer>
-        
-        <div class="bottom">
-
-
-
-
-            <div class="social_btn">
-                <a href="https://vk.com/k_305" target="_blank"><span class="icon-vkontakte"></span></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="footer_btn">
+                        <div class="social_btn">
+                            <a href="https://vk.com/k_305" target="_blank"><span class="icon-vkontakte"></span></a>
+                        </div>
+                        <div class="social_btn">
+                            <a href="#"><span class="icon-instagram"></span></a>
+                        </div>
+                        <div class="social_btn">
+                            <a href="#"><span class="icon-facebook"></span></a>
+                        </div>
+                        <div class="social_btn">
+                            <a href="#"><span class="icon-linkedin-squared"></span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="social_btn">
-                <a href="#"><span class="icon-instagram"></span></a>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-4">
+                    <ul class="menu p0">
+                        <li><a href="index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">ФОРУМ</a></li>
+                        <li><a href="#">ДОСТИЖЕНИЯ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="social_btn">
-                <a href="#"><span class="icon-facebook"></span></a>
+        </div>
+        <div class="container-fluid p0">
+            <div class="footer_bottom ">
+                <div class="row m0">
+                    <div class="col-md-6 col-md-offset-3 ">
+                        <div class="words">
+                            <strong>Сделано с <span>&#x2764;</span> для студентов кафедры 305</strong><br />
+                            <p></p>
+                            <p>&copy; Чалапа В.В. 2017г.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="social_btn">
-                <a href="#"><span class="icon-linkedin-squared"></span></a>
-            </div>
-            <p>Copyright © 2017 - Студенчество кафедры 305</p>
-        </div> 
+        </div>
     </footer>
-
-    
-  
 
     <script src="js/main.js"></script>
     <script src="parallax.min.js"></script>
     <script src="jquery/jquery-2.1.4.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    
+    <script src="bootstrap/js/bootstrap.min.js"></script>    
 </body >
 </html >
