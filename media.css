@@ -1,4 +1,4 @@
-﻿@media only screen and (max-width: 768px) {
+﻿@media screen and (max-width: 479px) {
     .navbar-header {        
         position: fixed;
         background-color: rgb(97, 63, 0);
@@ -13,7 +13,7 @@
           
     }
     .header_main img {
-        max-width: 400px;        
+        width: 100%;        
     }
     .menu_btn {
         background-color: #e88d29;
