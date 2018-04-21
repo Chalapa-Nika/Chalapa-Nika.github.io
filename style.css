@@ -6,6 +6,7 @@
 }
 body {    
     font-family: Monly Serif Lite,sans-serif;
+
 }
 a,
 a:active,
@@ -17,6 +18,11 @@ a:visited{
 h1 {
     font-size: 50px;
 }
+*img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
 
 /*HEADER*/
 header,
@@ -27,9 +33,14 @@ header,
     height: 100vh;
     background-size: ;
     text-align: center;
+    max-width: 100%;
 }
 header {
-    background: url("img/header/header_bg.png");
+    background-image: url("img/header/header_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #dignity {
     background: url("img/dignity/hu.jpg");
