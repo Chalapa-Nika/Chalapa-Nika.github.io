@@ -25,10 +25,24 @@ header,
 .map,
 .video {
     height: 100vh;
-    background-size: cover;
+    background-size: ;
     text-align: center;
 }
-
+header {
+    background: url("img/header/header_bg.png");
+}
+#dignity {
+    background: url("img/dignity/hu.jpg");
+}
+.activ {
+    background: url("img/activ/bg.png");
+}
+.main {
+    background: url("img/video/bg.jpg");
+}
+nav {
+    width: 100%;
+}
 /*.top_panel {
     background-color: #1e1300;
     height: 60px;
@@ -53,7 +67,7 @@ header,
 .menu {    
     //width: 100%;   
     list-style: none;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .menu li {
     float: left;
@@ -109,7 +123,7 @@ header,
     width: 90px;
 }
 .header_main {    
-    margin: 150px;    
+    margin: 150px auto;    
 }
 .header_main h1 {
     color: #e88d29;     
