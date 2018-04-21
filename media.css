@@ -1,4 +1,8 @@
-﻿@media screen and (max-width: 768px) {
+﻿@media only screen and (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+    }
     .navbar-header {        
         position: fixed;
         background-color: rgb(97, 63, 0);
@@ -92,6 +96,6 @@
         width: 400px;
         margin-top: 60px;
     }
-    .geography {
-        width: 786px;
+    .map {
+        display: none;
     }
