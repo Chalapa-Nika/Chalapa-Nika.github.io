@@ -1,8 +1,5 @@
 ﻿@media only screen and (max-width: 768px) {
-    html,
-    body {
-        width: 100%;
-    }
+   html, body{width:100%; height:100%; overflow-x:hidden}
     .navbar-header {        
         position: fixed;
         background-color: rgb(97, 63, 0);
