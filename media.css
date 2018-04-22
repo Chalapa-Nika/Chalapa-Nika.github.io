@@ -122,4 +122,12 @@
     .content p {
         font-size: 13px;
     }
+    .carousel {
+        height: 300px;
+        width: 300px;
+    }
+    #dignity h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
     }
