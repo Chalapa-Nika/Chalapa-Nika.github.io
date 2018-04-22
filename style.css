@@ -28,8 +28,7 @@ h1 {
 header,
 #dignity,
 .activ,
-.map,
-.video {
+.map {
     height: 100vh;
     background-size: ;
     text-align: center;
@@ -44,6 +43,10 @@ header {
 }
 #dignity {
     background: url("img/dignity/hu.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .activ {
     background: url("img/activ/bg.png");
@@ -75,23 +78,30 @@ nav {
 .lang:last-child {
     margin-right: 40px;
 }*/
-.menu {    
+.menu_footer {
+    margin: auto;
+}
+.menu,
+.menu_footer {    
     //width: 100%;   
     list-style: none;
     margin-top: 40px;
 }
-.menu li {
+.menu li,
+.menu_footer li {
     float: left;
     margin-right: 10px;
     position:relative;
     display: block;
 }
-.menu li a {
+.menu li a,
+.menu_footer li a {
     display: block;
     padding: 5px 5px 0 5px;    
     font-size: 25px;
 }
-.menu li a:hover {
+.menu li a:hover,
+.menu_footer li a:hover {
     color: #9d8b5e;
 }
 .menu ul {    
@@ -135,6 +145,10 @@ nav {
 }
 .header_main {    
     margin: 150px auto;    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .header_main h1 {
     color: #e88d29;     
@@ -216,6 +230,10 @@ a.btn:hover {
     width: 879px;
     height: 589px;
     margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: ;
+    background-size: cover;
 }
 .map .student {
     width: 35px;
@@ -309,9 +327,11 @@ a.btn:hover {
 }
 
 /*VIDEO*/
-.video h1 {
+
+.main h1 {
     color: #e88d29;
-    padding: 30px 0 50px 0;
+    padding: 50px 0 30px 0;
+    text-align: center;
 }
 .video_block {
     position:relative;

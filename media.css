@@ -99,3 +99,10 @@
     .map {
         display: none;
     }
+    .main h1{
+        margin-top: 0;
+    }
+    .menu_footer  {
+       margin: auto;
+    }
+    
