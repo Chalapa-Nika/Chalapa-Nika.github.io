@@ -130,7 +130,17 @@
         font-size: 30px;
         margin-top: 0;
     }
+    .video_desc h4{
+        font-size: 22px;
+        margin-bottom: 0;
+    }
     .activ {
         height: 550px;
+    }
+    .submit {
+        margin-bottom: 15px;
+    }
+    .words strong {
+        font-size: 12px;
     }
     }
