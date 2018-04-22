@@ -29,6 +29,7 @@
     }
     .logo {
         margin-top: -25px;
+        z-index: 999;
     }    
     .menu li {
         float: none;
@@ -143,6 +144,7 @@
     .words strong {
         font-size: 12px;
     }
-    pad {
-        padding: 0;}
+    .pad {
+        padding:0;
+    }
     }
